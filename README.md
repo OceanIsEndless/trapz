@@ -2,7 +2,7 @@
 
 trapz.io revival
 
-> [!WARN]
+> [!WARNING]
 >
 > Is not done. I also have yet to remove the ad scripts and such from the files.
 
