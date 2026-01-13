@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-92276269-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-92276269-2');
-</script>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="format-detection" content="telephone=no">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
@@ -21,52 +12,7 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css" />	
 </head>
 <body class="loaded trapz">
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12&appId=2049129418656586';
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
-	<script>
-	var aiptag = aiptag || {};
-	aiptag.consented = true; //GDPR setting, please set this value to false if an EU user has declined or not yet accepted marketing cookies, for users outside the EU please use true
-	aiptag.cmd = aiptag.cmd || [];
-	aiptag.cmd.display = aiptag.cmd.display || [];
-	aiptag.cmd.player = aiptag.cmd.player || [];
-        aiptag.gdprShowConsentTool = true;
-	//aiptag.gdprShowConsentToolButton = true;
-		aiptag.cmd.player.push(function() {
-		adplayer = new aipPlayer({
-			AD_WIDTH: window.innerWidth,
-			AD_HEIGHT: window.innerHeight,
-			AD_FULLSCREEN: false,
-			AD_CENTERPLAYER: true,
-			LOADING_TEXT: 'loading advertisement',
-			PREROLL_ELEM: function(){return document.getElementById('outstreamContainer')},
-			AIP_COMPLETE: function (AD_TYPE)  {
-				/*******************
-				 ***** WARNING *****
-				 *******************
-				 Please do not remove the PREROLL_ELEM
-				 from the page, it will be hidden automaticly.
-				 If you do want to remove it use the AIP_REMOVE callback.
-				 AD_TYPE can be: preroll or reward.
-				*/
-				window.onDoneAds();
-				//alert("Ad: " + AD_TYPE + " Completed");
-			},
-			AIP_REMOVE: function ()  {
-				// Here it's save to remove the PREROLL_ELEM from the page.
-				// But it's not necessary.
-			}
-		});
-	});
-</script>
-<script async src="//api.adinplay.com/libs/aiptag/pub/TPZ/trapz.io/tag.min.js"></script>
-							
+					
 <!-- BEGIN BODY -->
 <div id="gameDiv" style="text-align: center; position:absolute;">
 </div>
@@ -88,17 +34,11 @@
 						
 						<div class="main-trapz__item_left trapz-block" id="trapz-io_300x250">
 							<div><img src="img/ads.png"></div>
-							<script type='text/javascript'>
-								aiptag.cmd.display.push(function() { aipDisplayTag.display('trapz-io_300x250'); });
-							</script>
 						</div>	
 					</div>
 					
 					<div class="main-trapz__item_high" id="bannerOverLeftSpr" style="min-height: 674px;">
 						<div class="main-trapz__item_left_high trapz-block"  style="min-height: 674px; min-width: 300px; display: none;" id="trapz-io_300x600">
-							<!-- <script type='text/javascript'>
-								aiptag.cmd.display.push(function() { aipDisplayTag.display('trapz-io_300x600'); });
-							</script> -->
 						</div>	
 					</div>
 					<div class="main-trapz__item main-trapz__item_center" id="login">
@@ -121,7 +61,6 @@
 							<button class="main-trapz__submit shop" href="#shop" onclick="">Skins</button>
 						</div>
 						<div class="main-trapz__download trapz-block" style="margin-top: 43px;">
-							<div class="fb-page" data-href="https://www.facebook.com/trapzio" data-width="290" data-small-header="true" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/trapzio" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/trapzio">Trapz.io</a></blockquote></div>
 						</div>
 					</div>
 						
@@ -223,7 +162,7 @@
 
 <!-- LEADERBOARDS -->
 <div class="link_lb">
-	<p><a href="/leaderboards" target="_blank" >Leaderboards</a></p>
+	<p><a href="./leaderboards" target="_blank" >Leaderboards</a></p>
 	
 </div>
 <!-- LEADERBOARDS EOF -->
@@ -299,7 +238,6 @@
 	<script type="text/javascript" src="js/jquery-migrate-1.4.1.min.js" ></script>
 	<script type="text/javascript" src="js/components/jquery.fancybox.js" ></script>
 	<script type="text/javascript" src="js/custom.js" ></script>
-	<script type="text/javascript" src="//imasdk.googleapis.com/js/sdkloader/outstream.js"></script>
 	<script src="./libs/socket.io.slim.js"></script>
     <script src="./libs/phaser.js"></script>
     <script src="./libs/phaser-input.js"></script>
@@ -376,36 +314,6 @@
            
         });
     </script>
-	
-<!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
-    (function (d, w, c) {
-        (w[c] = w[c] || []).push(function() {
-            try {
-                w.yaCounter47894420 = new Ya.Metrika({
-                    id:47894420,
-                    clickmap:true,
-                    trackLinks:true,
-                    accurateTrackBounce:true
-                });
-            } catch(e) { }
-        });
 
-        var n = d.getElementsByTagName("script")[0],
-            s = d.createElement("script"),
-            f = function () { n.parentNode.insertBefore(s, n); };
-        s.type = "text/javascript";
-        s.async = true;
-        s.src = "https://mc.yandex.ru/metrika/watch.js";
-
-        if (w.opera == "[object Opera]") {
-            d.addEventListener("DOMContentLoaded", f, false);
-        } else { f(); }
-    })(document, window, "yandex_metrika_callbacks");
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/47894420" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script async src="https://apis.google.com/js/platform.js"></script>
 </body>
 </html>
