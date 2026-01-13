@@ -2,6 +2,10 @@
 
 trapz.io revival
 
+> [!WARN]
+>
+> Is not done. I also have yet to remove the ad scripts and such from the files.
+
 ## Why?
 
 [trapz.io](https://trapz.io/) was an online multiplayer platformer game I used to play with friends. Years later, I returned to the game only to find the game server was shut down. I emailed the developers via their Contact link, but only got the reply that it is "long gone," suggesting I play other .io games instead. I do not know why the developers took it down, but I found this silent end unsatisfactory, especially considering the lack of notice. Over time I have attained a decent understanding of programming, and figured that if enough of the game's files were still available, I could find a way to restore it to its former glory.
