@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-92276269-2"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-92276269-2');
+	</script>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+	<title>Leaderboards</title>
+	<meta name='description' content="Trapz.io leaderboards." />
+	<meta name="keywords" content="trapz.io leaderboards" />
+	<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="/css/style.css" />
+	<link rel="stylesheet" href="/leaderboards/lb.css" />
+</head>
+
+<body class="loaded trapz">
+
+	<!-- BEGIN BODY -->
+
+	<div class="main-wrapper">
+
+		<!-- BEGIN CONTENT -->
+
+		<main class="content">
+			<div class="wrapper trapz-wrapper">
+				<div class="center-block">
+					<h1 style="font-size:100px;">LEADERBOARDS</h1>
+					<div class="main-trapz" style="display:block">
+						<div id="navBar">
+							<center>
+								<a onclick="view('block-gold')" class="navBtn" href="#gold">GOLD</a>
+								<a onclick="view('block-kills')" class="navBtn" href="#kills">KILLS</a>
+								<a onclick="view('block-time')" class="navBtn" href="#time">TIME ALIVE</a>
+							</center>
+						</div>
+						<div id="space"></div>
+						<div id="boards">
+
+							<!-- GOLD -->
+							<div id="block-gold" class="topblock">
+								<div class="board">
+									<center>
+										<h2 class="tblHead">Today</h2>
+									</center>
+									<table>
+										<tbody id="gold1">
+											<!--<tr>
+												<th style="width: 40px;">#</th>
+												<th>NAME</th>
+												<th style="width: 80px;">GOLD</th>
+											</tr>
+											<tr>
+												<td>1</td>
+												<td>
+													<div class="nameCell">Mike</div>
+												</td>
+												<td>97506</td>
+											</tr>
+											<tr>
+												<td>2</td>
+												<td>
+													<div class="nameCell">Pasha pasha</div>
+												</td>
+												<td>83995</td>
+											</tr>-->
+										</tbody>
+									</table>
+								</div>
+								<div id="space2"></div>
+								<div class="board">
+									<center>
+										<h2 class="tblHead">This week</h2>
+									</center>
+									<table>
+										<tbody id="gold7">
+											<!--<tr>
+												<th style="width: 40px;">#</th>
+												<th>NAME</th>
+												<th style="width: 80px;">GOLD</th>
+											</tr>
+											<tr>
+												<td>1</td>
+												<td>
+													<div class="nameCell">MIKE2</div>
+												</td>
+												<td>164341</td>
+											</tr>
+											<tr>
+												<td>2</td>
+												<td>
+													<div class="nameCell">PASHA PASHA2</div>
+												</td>
+												<td>139223</td>
+											</tr>-->
+										</tbody>
+									</table>
+								</div>
+							</div>
+
+							<!-- KILLS -->
+							<div id="block-kills" class="topblock" style='display:none;'>
+								<div class="board">
+									<center>
+										<h2 class="tblHead">Today</h2>
+									</center>
+									<table>
+										<tbody id="kills1">
+											<!--<tr>
+												<th style="width: 40px;">#</th>
+												<th>NAME</th>
+												<th style="width: 80px;">KILLS</th>
+											</tr>
+											<tr>
+												<td>1</td>
+												<td>
+													<div class="nameCell">FEDYA</div>
+												</td>
+												<td>97506</td>
+											</tr>
+											<tr>
+												<td>2</td>
+												<td>
+													<div class="nameCell">LOLOLO1111</div>
+												</td>
+												<td>83995</td>
+											</tr>-->
+										</tbody>
+									</table>
+								</div>
+								<div id="space2"></div>
+								<div class="board">
+									<center>
+										<h2 class="tblHead">This week</h2>
+									</center>
+									<table>
+										<tbody id="kills7">
+											<!--<tr>
+												<th style="width: 40px;">#</th>
+												<th>NAME</th>
+												<th style="width: 80px;">KILLS</th>
+											</tr>
+											<tr>
+												<td>1</td>
+												<td>
+													<div class="nameCell">Artem</div>
+												</td>
+												<td>164341</td>
+											</tr>
+											<tr>
+												<td>2</td>
+												<td>
+													<div class="nameCell">asfsafsa</div>
+												</td>
+												<td>139223</td>
+											</tr>-->
+										</tbody>
+									</table>
+								</div>
+							</div>
+
+							<!-- TIME -->
+							<div id="block-time" class="topblock" style='display:none;'>
+								<div class="board">
+									<center>
+										<h2 class="tblHead">Today</h2>
+									</center>
+									<table>
+										<tbody id="time1">
+											<!--<tr>
+												<th style="width: 40px;">#</th>
+												<th>NAME</th>
+												<th style="width: 80px;">TIME</th>
+											</tr>
+											<tr>
+												<td>1</td>
+												<td>
+													<div class="nameCell">dra</div>
+												</td>
+												<td>97506</td>
+											</tr>
+											<tr>
+												<td>2</td>
+												<td>
+													<div class="nameCell">ddddddd dd</div>
+												</td>
+												<td>83995</td>
+											</tr>-->
+										</tbody>
+									</table>
+								</div>
+								<div id="space2"></div>
+								<div class="board">
+									<center>
+										<h2 class="tblHead">This week</h2>
+									</center>
+									<table>
+										<tbody id="time7">
+											<!--<tr>
+												<th style="width: 40px;">#</th>
+												<th>NAME</th>
+												<th style="width: 80px;">TIME</th>
+											</tr>
+											<tr>
+												<td>1</td>
+												<td>
+													<div class="nameCell">123333</div>
+												</td>
+												<td>164341</td>
+											</tr>
+											<tr>
+												<td>2</td>
+												<td>
+													<div class="nameCell">mmmmmmmmm</div>
+												</td>
+												<td>139223</td>
+											</tr>-->
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<script>
+								function view(idDiv) {
+									var divs = document.getElementsByClassName('topblock');
+									for (var i = 0; i < divs.length; i++) {
+										if (divs[i].id == idDiv) {
+											divs[i].style.display = 'block';
+											continue;
+										}
+										divs[i].style.display = 'none';
+									}
+								}
+							</script>
+
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<!-- CONTENT EOF   -->
+
+		<!-- BEGIN FOOTER -->
+
+		<footer class="footer">
+			<div class="footer__wrapper">
+				<div class="footer__social social">&nbsp;</div>
+				<div class="footer__menu">
+					<nav class="footer__nav nav">
+						<ul class="nav__list">
+							<li>
+								<a href="/" class="nav__link js-fancybox">Game</a>
+							</li>
+							<li>
+								<a href="mailto:info@trapz.io" class="nav__link js-fancybox">Contact</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</footer>
+
+		<!-- FOOTER EOF   -->
+
+	</div>
+
+	<div class="icon-load"></div>
+
+	<!-- BODY EOF   -->
+
+	<script type="text/javascript" src="/js/jquery-3.0.0.min.js"></script>
+	<script type="text/javascript" src="/js/jquery-migrate-1.4.1.min.js"></script>
+
+	<script type="text/javascript" src="/js/components/jquery.fancybox.js"></script>
+	<script type="text/javascript" src="/js/custom.js"></script>
+
+	<script src="/leaderboards/js/socket.io.slim.js"></script>
+
+	<script>
+		$(function () {
+			var socket = io('https://ws.trapz.io', {
+				transports: ['websocket']
+			});
+
+			socket.emit('leaderboard', {});
+
+			socket.on('leaderboard', function (msg) {
+				$("#gold1").html(msg.gold1);
+				$("#gold7").html(msg.gold7);
+				$("#kills1").html(msg.kills1);
+				$("#kills7").html(msg.kills7);
+				$("#time1").html(msg.time1);
+				$("#time7").html(msg.time7);
+			});
+
+		});
+	</script>
+
+	<!-- Yandex.Metrika counter -->
+	<script type="text/javascript">
+		(function (d, w, c) {
+			(w[c] = w[c] || []).push(function () {
+				try {
+					w.yaCounter47894420 = new Ya.Metrika({
+						id: 47894420,
+						clickmap: true,
+						trackLinks: true,
+						accurateTrackBounce: true
+					});
+				} catch (e) {}
+			});
+
+			var n = d.getElementsByTagName("script")[0],
+				s = d.createElement("script"),
+				f = function () {
+					n.parentNode.insertBefore(s, n);
+				};
+			s.type = "text/javascript";
+			s.async = true;
+			s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+			if (w.opera == "[object Opera]") {
+				d.addEventListener("DOMContentLoaded", f, false);
+			} else {
+				f();
+			}
+		})(document, window, "yandex_metrika_callbacks");
+	</script>
+	<noscript>
+		<div>
+			<img src="https://mc.yandex.ru/watch/47894420" style="position:absolute; left:-9999px;" alt="" />
+		</div>
+	</noscript>
+	<!-- /Yandex.Metrika counter -->
+
+</body>
+
+</html>

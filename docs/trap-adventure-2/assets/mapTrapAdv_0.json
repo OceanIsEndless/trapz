@@ -1,0 +1,107 @@
+{ "height":14,
+ "layers":[
+        {
+         "data":[2, 2, 0, 0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+         "height":14,
+         "name":"0",
+         "opacity":1,
+         "type":"tilelayer",
+         "visible":true,
+         "width":22,
+         "x":0,
+         "y":0
+        }, 
+		 {
+         "draworder":"topdown",
+         "name":"ovrlpZone",
+         "objects":[
+                {
+                 "gid":4,
+                 "height":45,
+                 "id":2,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":45,
+                 "x":226,
+                 "y":496
+                }],
+         "opacity":1,
+         "type":"objectgroup",
+         "visible":true,
+         "x":0,
+         "y":0
+        }, 
+        {
+         "draworder":"topdown",
+         "name":"exit",
+         "objects":[
+                {
+                 "gid":3,
+                 "height":54,
+                 "id":1,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":60,
+                 "x":901,
+                 "y":439
+                }],
+         "opacity":1,
+         "type":"objectgroup",
+         "visible":true,
+         "x":0,
+         "y":0
+        }],
+ "nextobjectid":2,
+ "orientation":"orthogonal",
+ "renderorder":"right-down",
+ "tiledversion":"1.0.3",
+ "tileheight":45,
+ "tilesets":[
+        {
+      "firstgid": 1,
+      "image": "tile45_2.png",
+      "imageheight": 45,
+      "imagewidth": 90,
+      "margin": 0,
+      "name": "tile45_2",
+      "properties": {
+
+      },
+      "spacing": 0,
+      "tileheight": 45,
+      "tilewidth": 45
+    },
+        {
+         "columns":0,
+         "firstgid":3,
+         "grid":
+            {
+             "height":1,
+             "orientation":"orthogonal",
+             "width":1
+            },
+         "margin":0,
+         "name":"exit60",
+         "spacing":0,
+         "tilecount":1,
+         "tileheight":54,
+         "tiles":
+            {
+             "0":
+                {
+                 "image":"EmptyPhaserBase\/public\/assets\/exit60.png",
+                 "imageheight":54,
+                 "imagewidth":60
+                }
+            },
+         "tilewidth":60
+        }],
+ "tilewidth":45,
+ "type":"map",
+ "version":1,
+ "width":22
+}

@@ -1,0 +1,1 @@
+User-Agent: Mediapartners-Google Disallow:User-agent: *Disallow: /?*Host: https://trapz.io

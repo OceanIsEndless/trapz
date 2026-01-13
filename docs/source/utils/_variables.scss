@@ -1,0 +1,24 @@
+/* reset */
+$min-width: 320px; 
+$max-width: 1200px; 
+$base-bg: #FFF; 
+$base-font-size: 17px; 
+$base-line-height: 1.3; 
+$base-font-family:'Muller', Arial, sans-serif; 
+$custom-font-family: 'Endless Boss Battle', sans-serif; 
+$link-color: #100da9;
+$default-transition:all 0.2s linear;
+
+/* main variables */
+
+//text, titles
+$text-color: #aaaaaa;
+$title-color: #3a3a3a;
+$title-font-family: $custom-font-family;
+
+$font-size-h1: 205px;
+$line-height-h1: 1;
+$font-size-h2: 22px;
+$line-height-h2: 1.2;
+$font-size-h3: 20px;
+$line-height-h3: 1.2;
