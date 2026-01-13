@@ -1,10 +1,10 @@
 # trapz
 
-trapz.io revival
+[trapz.io revival](https://oceanisendless.github.io/trapz/)
 
-> [!WARNING]
+> [!NOTE]
 >
-> Is not done. I also have yet to remove the ad scripts and such from the files.
+> Is not done! It will be loading forever...
 
 ## Why?
 
