@@ -238,7 +238,7 @@ window.showGame = function()
 {
 	if(window.checkPageTime())
 	{
-		window.open('https://trapz.io/?'+'rnd='+ Math.floor(Math.random()*1000)+'&nick='+ window.inputName, '_self');//, '_self'
+		window.open('./?'+'rnd='+ Math.floor(Math.random()*1000)+'&nick='+ window.inputName, '_self');//, '_self'
 	}
 	else
 	{
@@ -255,7 +255,7 @@ window.showGame = function()
 	if(window.restartsCount>0)
 	{
 		window.restartsCount= 0;
-		window.open('https://trapz.io/?'+'rnd='+ Math.floor(Math.random()*1000)+'&nick='+ window.inputName, '_self');//, '_self'
+		window.open('./?'+'rnd='+ Math.floor(Math.random()*1000)+'&nick='+ window.inputName, '_self');//, '_self'
 	}*/
 }
 
