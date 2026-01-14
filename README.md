@@ -25,7 +25,7 @@ Using my browser's dev tools, I inspected what game files were still available f
   - Locally hosted for now.
 - Slowly implement missing features.
   - Slowly as in, "I don't actually have time to do any of this." ;[
-- Figure out how in the world to host the recreated server for others.
+- Figure out how in the world to make it able to connect to a custom server and make it accessible for people that don't know how to make their own server without hosting my own replacement server because that would be problematic...
   - Literally no clue.
 - More closely recreate the original server based on gameplay videos, public information, client code, etc.
   - The server would have maintained the game state, so naturally some things would have been solely determined by the server code, which is presently unavailable and will likely remain so. I have not gotten this far in reviving the game, so I do not know the extent to which the server influenced it.
@@ -35,5 +35,7 @@ Using my browser's dev tools, I inspected what game files were still available f
 I do not hold any rights to the game assets and code, nor did I create them. I consider trapz.io to be abandoned, and if you mind me bringing it back, then you and I will likely have a problem. :>
 
 On a more serious note, I will ***not*** be profiting off of this game (that would be highly unethical; no ads or anything) or building upon it in any way (unless I somehow become unhealthily obsessed with it). I am just putting it back into a functional state in the interest of the one person out there seeing this who cares about the status of this game, which is probably me looking in a mirror.
+
+This project is entirely unofficial. The original developers are not affiliated with me or this repo. If you happen to be the original developer(s), I can take this down if you _really really really_ want me to, though I would much rather come to a compromise than lose the game forever. I might remove the original assets from this repo and instead retrieve them from trapz.io (as the website itself is still up, amazingly), or the Wayback Machine, or somewhere else that would make sense... or make my own, though that would significantly more difficult.
 
 All credit to the people that made the original game for, like... making it!
