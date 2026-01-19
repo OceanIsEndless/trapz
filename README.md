@@ -17,12 +17,16 @@ Using my browser's dev tools, I inspected what game files were still available f
 - Manually compiled available game files from trapz.io and the [Wayback Machine](https://web.archive.org/web/*/trapz.io*) into this repository.
   - Also attempted to retrieve files similarly named to known ones (e.g. discovered `shop.js` based on `obfShop.js`).
 
+## Doing right now
+
+- Creating a list of the different types of messages sent between the server and the client, including the structure of the data and what they appear to do
+
 ## What comes next
 
 - Reverse engineer how the client communicated with the server (i.e. analyze the code for network requests).
-  - It appears to use [Socket.IO](https://socket.io/) v[2.0.4](https://github.com/socketio/socket.io/releases/tag/2.0.4), so I will be looking in `final.js` (the main game script) for `.on(` and `.emit(` calls.
+  - It appears to use [Socket.IO](https://socket.io/) v[2.0.4](https://github.com/socketio/socket.io/releases/tag/2.0.4), so I will be looking in `final.js` and `gameControl.js` (the main game scripts) for `.on(` and `.emit(` calls.
 - Create a stub server of some sort that does as little as possible, interface it with the client code, and get the game to load.
-  - Locally hosted for now.
+  - Locally hosted for now; might replace Socket.IO on the client to make this work instead of maintaining actual server?? Don't really have an idea of how this will work yet...
 - Slowly implement missing features.
   - Slowly as in, "I don't actually have time to do any of this." ;[
 - Figure out how in the world to make it able to connect to a custom server and make it accessible for people that don't know how to make their own server without hosting my own replacement server because that would be problematic...
