@@ -59,7 +59,7 @@ Updates the client’s game state so that it conforms to the main state of the g
 
 #### `wallet`
 
-Informs the client that they or another user has found a wallet.
+Informs the client that they or another user has found a purse.
 
 ```ts
 {
@@ -246,7 +246,7 @@ Informs the server that the user has either upgraded their sword or obtained ano
 
 #### `leaderboard`
 
-Possibly asks the server to begin sending updates to the client for the leaderboard via leaderboard, though its purpose is not immediately obvious from the code.
+Possibly asks the server to begin sending updates to the client for the leaderboard via `leaderboard`, though its purpose is not immediately obvious from the code.
 
 ```ts
 {}
@@ -256,7 +256,7 @@ Possibly asks the server to begin sending updates to the client for the leaderbo
 
 #### `skinStats`
 
-Perhaps used to send statistics on the skins unlocked by users to the server.
+Sends statistics on the skins unlocked by the user to the server.
 
 ```ts
 {
@@ -269,6 +269,8 @@ Perhaps used to send statistics on the skins unlocked by users to the server.
 
 #### `move player`
 
+Presumably tells the server where the client's character has moved to.
+
 ```ts
 {
 	"x": number,
@@ -280,6 +282,8 @@ Perhaps used to send statistics on the skins unlocked by users to the server.
 
 #### `new player`
 
+Presumably creates a new player character. May have been attached to the client's IP address.
+
 ```ts
 {
 	"x": number,
@@ -290,6 +294,8 @@ Perhaps used to send statistics on the skins unlocked by users to the server.
 ```
 
 #### `reconnect`
+
+Presumably asks the server for the client to be reconnected after it is disconnected. It doesn't seem to do this anymore.
 
 ```ts
 {
@@ -314,6 +320,8 @@ Likely meant to continue the game after the player dies. Was replaced with emitt
 ```
 
 #### `new_player`
+
+Presumably creates a new player character. May have been attached to the client's IP address.
 
 ```ts
 {
