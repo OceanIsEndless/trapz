@@ -19,27 +19,27 @@ Using my browser's dev tools, I inspected what game files were still available f
 
 ## Doing right now
 
-- Creating a list of the different types of messages sent between the server and the client, including the structure of the data and what they appear to do
+- Creating a list of the different types of messages sent between the server and the client, including the structure of the data and what they used to do.
+  - It appears to use [Socket.IO](https://socket.io/) v[2.0.4](https://github.com/socketio/socket.io/releases/tag/2.0.4), so I will be looking in `final.js`, `gameControl.js`, and `shop.js` (the main game scripts) for `.on(` and `.emit(` calls.
 
 ## What comes next
 
-- Reverse engineer how the client communicated with the server (i.e. analyze the code for network requests).
-  - It appears to use [Socket.IO](https://socket.io/) v[2.0.4](https://github.com/socketio/socket.io/releases/tag/2.0.4), so I will be looking in `final.js` and `gameControl.js` (the main game scripts) for `.on(` and `.emit(` calls.
-- Create a stub server of some sort that does as little as possible, interface it with the client code, and get the game to load.
-  - Locally hosted for now; might replace Socket.IO on the client to make this work instead of maintaining actual server?? Don't really have an idea of how this will work yet...
+- Swap out `window.socket` (Socket.IO) for a version which interacts with a bare minimum local simulation of the trapz.io server so that the game will at the very least load in.
+  - I.e. make the client think it's interfacing with the server without interfacing with the server, as it no longer exists.
+  - Essentially a single player mode.
 - Slowly implement missing features.
   - Slowly as in, "I don't actually have time to do any of this." ;[
-- Figure out how in the world to make it able to connect to a custom server and make it accessible for people that don't know how to make their own server without hosting my own replacement server because that would be problematic...
-  - Literally no clue.
+- Figure out how in the world to solicit communication between clients while still being accessible for people who can't host a server and without hosting my own server because that would be problematic...
+  - Literally no clue... though the multiplayer part of the game *is a pretty big part of the game*.
 - More closely recreate the original server based on gameplay videos, public information, client code, etc.
-  - The server would have maintained the game state, so naturally some things would have been solely determined by the server code, which is presently unavailable and will likely remain so. I have not gotten this far in reviving the game, so I do not know the extent to which the server influenced it.
+  - The server would have maintained the game state, so naturally some things would have been solely determined by the server code, which is presently unavailable and will likely remain so. I have not gotten this far in reviving the game, so I do not know the extent to which the server influenced it. Additionally, the client scripts for the most recent version of the game are obfuscated, so any differences from previous versions will have to be determined through means other than skimming the code.
 
 ## Disclaimer
 
 I do not hold any rights to the game assets and code, nor did I create them. I consider trapz.io to be abandoned, and if you mind me bringing it back, then you and I will likely have a problem. :>
 
-On a more serious note, I will ***not*** be profiting off of this game (that would be highly unethical; no ads or anything) or building upon it in any way (unless I somehow become unhealthily obsessed with it). I am just putting it back into a functional state in the interest of the one person out there seeing this who cares about the status of this game, which is probably me looking in a mirror.
+On a more serious note, I will ***not*** be profiting off of this game (that would be highly unethical) or building upon it in any way (unless I somehow become unhealthily obsessed with it). I am just putting it back into a functional state in the interest of the one person out there seeing this who cares about the status of this game, which is probably me looking in a mirror.
 
-This project is entirely unofficial. The original developers are not affiliated with me or this repo. If you happen to be the original developer(s), I can take this down if you _really really really_ want me to, though I would much rather come to a compromise than lose the game forever. I might remove the original assets from this repo and instead retrieve them from trapz.io (as the website itself is still up, amazingly), or the Wayback Machine, or somewhere else that would make sense... or make my own, though that would significantly more difficult.
+This project is entirely unofficial. The original developers are not affiliated with me or this repo. If you happen to be the original developer(s), I can take this down if you _really really really_ want me to, though I would much rather come to a compromise than lose the game forever. I might remove the original assets from this repo and instead retrieve them from trapz.io (as the website itself is still up, amazingly), or the Wayback Machine, or somewhere else that would make sense... or make my own, though that would be significantly more difficult. I could also turn this into a userscript or booklet that can be run on the original website to make it functional again rather than hosting my own separate copy of it, though this would not be good for long-term preservation.
 
 All credit to the people that made the original game for, like... making it!
