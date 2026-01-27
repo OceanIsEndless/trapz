@@ -36,6 +36,10 @@ input[type=submit], input[type=button], button { -webkit-appearance: none; outli
 
 .clearfix:after, .wrapper:after, .row:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
 
+@font-face { font-family: 'Endless Boss Battle'; src: url("../fonts/Endless Boss Battle Regular.eot"); src: url("../fonts/Endless Boss Battle Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Endless Boss Battle Regular.woff2") format("woff2"), url("../fonts/Endless Boss Battle Regular.woff") format("woff"), url("../fonts/Endless Boss Battle Regular.ttf") format("truetype"), url("../fonts/Endless Boss Battle Regular.svg#Endless Boss Battle Regular") format("svg"); font-weight: 400; font-style: normal; font-stretch: normal; unicode-range: U+0020-00FE; }
+
+@font-face { font-family: 'Muller'; src: url("../fonts/MullerBold.eot"); src: url("../fonts/MullerBold.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerBold.woff2") format("woff2"), url("../fonts/MullerBold.woff") format("woff"), url("../fonts/MullerBold.ttf") format("truetype"), url("../fonts/MullerBold.svg#MullerBold") format("svg"); font-weight: 700; font-style: normal; font-stretch: normal; unicode-range: U+0020-00FE; }
+
 /*
 ================================================================================
 |                                     HEADER                                   |
@@ -483,3 +487,4 @@ tr:hover, th{
   }
 }
 /*# sourceMappingURL=style.css.map */
+
